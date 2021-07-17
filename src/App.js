@@ -78,7 +78,7 @@ class App extends Component {
   }
   handleDelete = (id) => {
     const notes = [...this.state.notes]
-    const filteredNotes = notes.filter(note => note.id !==+id)
+    const filteredNotes = notes.filter(note => note.id !== +id)
     this.setState({ notes: filteredNotes})
   }
 

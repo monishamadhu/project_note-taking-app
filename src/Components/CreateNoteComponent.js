@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Input,
-  Button,
-} from 'reactstrap';
+import {InputGroup,InputGroupAddon,InputGroupText,Input,Button} from 'reactstrap';
 
 const CreateNote = ({title, description, handleChange, handleClick, history}) => {
    const handleSavedNote = () => {

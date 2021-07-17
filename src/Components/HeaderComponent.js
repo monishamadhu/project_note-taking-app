@@ -8,17 +8,17 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
       return(
-        <Navbar color="light" light>
-            <NavbarBrand href="/">Nucamp Notes</NavbarBrand>
+        <Navbar color="light" className="navbar">
+            <NavbarBrand href="/" id="heading">Notes to Remember</NavbarBrand>
             <Nav>
-                <NavItem>
+                {/* <NavItem>
                     <i className= "fa fa-camera fa-lg" />
+                </NavItem> */}
+                <NavItem>
+                    <Link className='nav-link fa fa-eye fa-lg' to= '/view-notes'> View Notes </Link>
                 </NavItem>
                 <NavItem>
-                    <Link className='nav-link' to= '/view-notes'> View Notes </Link>
-                </NavItem>
-                <NavItem>
-                    <Link className='nav-link' to= '/create-note'> Create Notes </Link>
+                    <Link className='nav-link fa fa-plus-circle fa-lg' to= '/create-note'> Create Note </Link>
                 </NavItem>
             </Nav>
         </Navbar>
